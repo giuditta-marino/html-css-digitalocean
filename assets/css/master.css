@@ -1,0 +1,43 @@
+/* HEADER */
+/* NAVBAR */
+.navbar-brand img{
+  height: 40px;
+}
+
+.navbar-brand{
+    padding: 4px 15px;
+}
+
+.navbar-default{
+  background-color: red;
+  border: 0;
+  padding: 25px;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: #000;
+}
+
+/* MEDIA QUERY DIMENSIONI TABLET */
+@media all and (min-width: 768px) {
+  .navbar-nav{
+    display: none;
+  }
+
+  .navbar-toggle{
+    position: relative;
+    display: block;
+    float: right;
+  }
+}
+
+
+/* MEDIA QUERY DIMENSIONI DESKTOP */
+@media all and (min-width: 1200px) {
+  .navbar-nav{
+    display: block;
+  }
+    .navbar-toggle{
+      display: none;
+  }
+}
