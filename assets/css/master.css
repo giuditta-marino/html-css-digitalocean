@@ -1,3 +1,7 @@
+body, html{
+  font-family: 'Inter', sans-serif;
+}
+
 /* HEADER */
 /* NAVBAR */
 .navbar-brand img{
@@ -5,11 +9,11 @@
 }
 
 .navbar-brand{
-    padding: 4px 15px;
+    padding: 5px 15px;
 }
 
 .navbar-default{
-  background-color: red;
+  background-color: #fff;
   border: 0;
   padding: 25px;
 }
@@ -17,6 +21,58 @@
 .navbar-default .navbar-nav>li>a{
   color: #000;
 }
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #0169FB;
+  height: 4px;
+  width: 30px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar{
+  margin-top: 6px;
+}
+
+.navbar-toggle{
+  border: 0;
+}
+
+/* JUMBOTRON */
+.jumbotron{
+  background: url("../img/bg-fish.svg")
+}
+
+.text-white{
+  color: #fff;
+}
+
+.jumbotron .card-form{
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+.jumbotron input, .jumbotron a{
+  display: block;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.jumbotron input{
+  border: 1px solid #d2d2d2;
+}
+
+::placeholder{
+  font-weight: 500;
+}
+
+
+/* UTILITIES */
+.text-blue{
+  color: #0169FB;
+}
+
+
+
 
 /* MEDIA QUERY DIMENSIONI TABLET */
 @media all and (min-width: 768px) {
@@ -37,7 +93,24 @@
   .navbar-nav{
     display: block;
   }
-    .navbar-toggle{
-      display: none;
+
+  .navbar-toggle{
+    display: none;
+  }
+
+  .navbar-default .navbar-nav>li>a{
+    font-size: 1.3em;
+  }
+
+  .navbar-brand{
+      padding: 4px 15px;
+  }
+
+  .navbar-brand img{
+    height: 35px;
+  }
+
+  .navbar-nav{
+    margin-left: 65px;
   }
 }
