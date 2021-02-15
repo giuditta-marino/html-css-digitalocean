@@ -4,12 +4,16 @@ body, html{
 
 /* HEADER */
 /* NAVBAR */
+.navbar{
+  margin-bottom: 0;
+}
+
 .navbar-brand img{
   height: 40px;
 }
 
 .navbar-brand{
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .navbar-default{
@@ -37,8 +41,11 @@ body, html{
 }
 
 /* JUMBOTRON */
-.jumbotron{
-  background: url("../img/bg-fish.svg")
+.jumbotron.bg-animated {
+  background: url("../img/bg-fish.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
 }
 
 .text-white{
@@ -49,28 +56,83 @@ body, html{
   background-color: #fff;
   color: #000;
   border-radius: 5px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
-.jumbotron input, .jumbotron a{
+.jumbotron input, .jumbotron form a{
   display: block;
-  margin: 0 auto;
+  margin: 7px auto;
   width: 94%;
 }
 
 .jumbotron input{
   border: 1px solid #d2d2d2;
+  border-radius: 5px;
 }
 
 ::placeholder{
   font-weight: 500;
 }
 
+.card-form h2{
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.card-form p#terms-of-service{
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+#terms-of-service a{
+  text-decoration: underline;
+  color: #0169FB;
+}
+/* RIGA LOGHI */
+section.sezione-loghi{
+  background-color: #f3f5f9;
+}
+
+.row.loghi ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+
+/* BUTTON */
+.button{
+  background-color: blue;
+  padding: 7px 0;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.btn-light-blue{
+  color: #fff;
+  background-color: #579aff;
+}
+
+.btn-white{
+  color: #626262;
+  background-color: #fff;
+}
 
 /* UTILITIES */
 .text-blue{
   color: #0169FB;
 }
 
+/* UTILITIES PER MARGIN E PADDING */
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
 
 
 
@@ -90,6 +152,11 @@ body, html{
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
 @media all and (min-width: 1200px) {
+
+  .navbar-default{
+    padding: 18px;
+  }
+
   .navbar-nav{
     display: block;
   }
