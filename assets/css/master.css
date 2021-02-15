@@ -52,6 +52,19 @@ body, html{
   color: #fff;
 }
 
+.jumbotron .introduction h1{
+  font-weight: 800;
+}
+
+.jumbotron .introduction p{
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.jumbotron .introduction .card-form p{
+  color: #000;
+}
+
 .jumbotron .card-form{
   background-color: #fff;
   color: #000;
@@ -134,19 +147,36 @@ section.sezione-loghi{
   margin-bottom: 20px;
 }
 
-
-
 /* MEDIA QUERY DIMENSIONI TABLET */
 @media all and (min-width: 768px) {
-  .navbar-nav{
-    display: none;
+/* PER COLLASSARE LE NAV E MOSTRARE HAMBURGER MENU */
+  .navbar-toggle{
+    display: block;
   }
 
-  .navbar-toggle{
-    position: relative;
-    display: block;
-    float: right;
+.navbar-header{
+    float: none;
   }
+
+  .navbar-collapse.collapse{
+    display: none!important;
+  }
+
+  /* JUMBOTRON */
+  .jumbotron .card-form{
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .jumbotron h1{
+    font-size: 2.3em;
+  }
+
+  .jumbotron p{
+    font-size: 1.5em;
+  }
+
+
 }
 
 
@@ -170,7 +200,7 @@ section.sezione-loghi{
   }
 
   .navbar-brand{
-      padding: 4px 15px;
+    padding: 4px 15px;
   }
 
   .navbar-brand img{
@@ -180,4 +210,41 @@ section.sezione-loghi{
   .navbar-nav{
     margin-left: 65px;
   }
+/* PER MOSTRARE LE NAV APERTE */
+  .navbar-toggle{
+    display: none;
+  }
+
+  .navbar-header{
+    float: left;
+  }
+
+  .navbar-collapse.collapse{
+    display: block!important;
+  }
+
+  /* JUMBOTRON */
+  .jumbotron h1{
+    font-size: 3.5em;
+  }
+
+  .jumbotron p{
+    font-size: 1.5em;
+  }
+
+  .jumbotron .card-form{
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+
+  .card-form h2{
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .card-form p#terms-of-service{
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
 }
