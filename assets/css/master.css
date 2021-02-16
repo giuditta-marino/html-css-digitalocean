@@ -41,6 +41,10 @@ body, html{
 }
 
 /* JUMBOTRON */
+.jumbotron{
+  margin-top: 108px;
+}
+
 .jumbotron.bg-animated {
   background: url("../img/bg-fish.svg");
   background-repeat: no-repeat;
@@ -143,7 +147,60 @@ a#view-customers p{
 
 .row.loghi ul li img{
   height: 80px;
-    margin: 0 15px;
+  margin: 0 15px;
+}
+
+/* MAIN */
+/* SECTION DEPLOY */
+section.deploy{
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+
+section.deploy h2{
+  font-weight: 800;
+}
+
+section.deploy p, section.deploy li{
+  color: #6f7b97;
+  font-weight: 600;
+  font-size:
+}
+
+section.deploy ul{
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+section.deploy li{
+  font-size: 1.4em;
+  list-style: none;
+  border-left: 2px solid #d2d2d2;
+  padding: 5px 10px;
+}
+
+section.deploy li a{
+  text-decoration: none;
+    color: #6f7b97;
+}
+
+section.deploy a:hover{
+  color: #000;
+}
+
+section.deploy li:hover{
+  border-color: #0169FB;
+}
+
+section.deploy p{
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+section.deploy h3{
+  font-weight: 800;
+  font-size: 1.4em;
 }
 
 /* BUTTON */
@@ -220,6 +277,15 @@ a#view-customers p{
     height: 45px;
     margin: 0 15px;
   }
+
+  /* SECTION DEPLOY */
+  section.deploy ul{
+    padding-left: 70px;
+  }
+
+  .row.menu-services, .row.services{
+    margin-top: 30px;
+  }
 }
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
@@ -266,6 +332,10 @@ a#view-customers p{
   }
 
   /* JUMBOTRON */
+  .jumbotron{
+    margin-top: 86px;
+  }
+
   .jumbotron h1{
     font-size: 3.5em;
   }
