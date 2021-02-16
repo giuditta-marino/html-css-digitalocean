@@ -105,13 +105,46 @@ body, html{
 /* RIGA LOGHI */
 section.sezione-loghi{
   background-color: #f3f5f9;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
-.row.loghi ul li {
+.row.loghi h4{
+  color: #6f7b97;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+a#view-customers{
+  text-decoration: none;
+}
+
+a#view-customers p{
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.row.loghi p:after{
+  content: ' \02C3';
+  vertical-align: middle;
+  padding-left: 7px;
+}
+
+.row.loghi ul{
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.row.loghi ul li{
   list-style: none;
   display: inline-block;
+  width: 50%;
 }
 
+.row.loghi ul li img{
+  height: 80px;
+    margin: 0 15px;
+}
 
 /* BUTTON */
 .button{
@@ -150,13 +183,13 @@ section.sezione-loghi{
 /* MEDIA QUERY DIMENSIONI TABLET */
 @media all and (min-width: 768px) {
 /* PER COLLASSARE LE NAV E MOSTRARE HAMBURGER MENU */
-  .navbar-toggle{
-    display: block;
-  }
+    .navbar-toggle{
+      display: block;
+    }
 
-.navbar-header{
-    float: none;
-  }
+  .navbar-header{
+      float: none;
+    }
 
   .navbar-collapse.collapse{
     display: none!important;
@@ -176,9 +209,18 @@ section.sezione-loghi{
     font-size: 1.5em;
   }
 
+  /* LOGHI */
+  .row.loghi ul li{
+    width: calc(100% / 6 - 15px);
+    margin
 
+  }
+
+  .row.loghi ul li img{
+    height: 45px;
+    margin: 0 15px;
+  }
 }
-
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
 @media all and (min-width: 1200px) {
