@@ -152,19 +152,28 @@ a#view-customers p{
 
 /* MAIN */
 /* SECTION DEPLOY */
-section.deploy{
-  margin-top: 65px;
-  margin-bottom: 50px;
+main section{
+  padding-top: 65px;
+  padding-bottom: 50px;
 }
 
 section.deploy h2{
   font-weight: 800;
 }
 
-section.deploy p, section.deploy li{
+main p, main li{
   color: #6f7b97;
   font-weight: 600;
-  font-size:
+}
+
+main p{
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+main h3{
+  font-weight: 800;
+  font-size: 1.4em;
 }
 
 section.deploy ul{
@@ -193,14 +202,56 @@ section.deploy li:hover{
   border-color: #0169FB;
 }
 
-section.deploy p{
-  font-weight: 600;
-  font-size: 1.4em;
+/* SECONDA SECTION */
+
+.bg-page{
+  margin: 0 auto;
+  height: 196px;
+  width: 300px;
+  background: url("../img/page.jpg");
+  background-size: cover;
+  position: relative;
 }
 
-section.deploy h3{
-  font-weight: 800;
-  font-size: 1.4em;
+.caret-left, .caret-right{
+  display: none;
+  position: absolute;
+}
+
+.caret-left{
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+}
+
+.caret-right{
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+}
+
+.slogan{
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 50%;
+  color: #000;
+  font-size: 1em;
+}
+
+section.designed-for .circle{
+  height: 11px;
+  width: 11px;
+  border: 1px solid #0169FB;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+section.designed-for .circles{
+  margin-top: 70px;
+}
+
+section.designed-for .circle.full{
+  background-color: #0169FB;
 }
 
 /* BUTTON */
@@ -227,6 +278,9 @@ section.deploy h3{
   color: #0169FB;
 }
 
+.bg-grey{
+  background-color: #eee;
+}
 /* UTILITIES PER MARGIN E PADDING */
 
 .mt-20{
@@ -286,6 +340,10 @@ section.deploy h3{
   .row.menu-services, .row.services{
     margin-top: 30px;
   }
+
+  /* SECONDA SECTION */
+  .caret-left, .caret-right{
+    display: inline-block;
 }
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
