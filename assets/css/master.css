@@ -97,9 +97,10 @@ body, html{
   font-weight: 700;
 }
 
-.card-form p#terms-of-service{
+.card-form p.link{
   font-size: 0.9em;
   font-weight: 600;
+  color:
 }
 
 #terms-of-service a{
@@ -119,19 +120,19 @@ section.sezione-loghi{
   font-weight: 700;
 }
 
-a#view-customers{
+a {
   text-decoration: none;
 }
 
-a#view-customers p{
+a.link-caret{
   font-weight: 700;
-  margin-top: 20px;
+  color: #0169FB;
 }
 
-.row.loghi p:after{
+a.link-caret:after{
   content: ' \02C3';
   vertical-align: middle;
-  padding-left: 7px;
+  padding-left: 9px;
 }
 
 .row.loghi ul{
@@ -157,7 +158,7 @@ main section{
   padding-bottom: 50px;
 }
 
-section.deploy h2{
+main h2{
   font-weight: 800;
 }
 
@@ -191,7 +192,7 @@ section.deploy li{
 
 section.deploy li a{
   text-decoration: none;
-    color: #6f7b97;
+  color: #6f7b97;
 }
 
 section.deploy a:hover{
@@ -342,9 +343,13 @@ section.designed-for .circle.full{
   }
 
   /* SECONDA SECTION */
-  .caret-left, .caret-right{
+  section.designed-for .caret-left, .caret-right{
     display: inline-block;
 }
+  section.designed-for .bg-page{
+    height: 287px;
+    width: 440px;
+  }
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
 @media all and (min-width: 1200px) {
@@ -417,4 +422,9 @@ section.designed-for .circle.full{
     font-weight: 600;
   }
 
+ /* SECONDA SECTION */
+ section.designed-for .bg-page{
+   height: 359px;
+   width: 551px;
+ }
 }
