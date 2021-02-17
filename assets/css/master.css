@@ -117,7 +117,7 @@ section.sezione-loghi{
   font-weight: 700;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
@@ -156,6 +156,7 @@ main section{
 }
 
 main h2{
+  font-size: 3em;
   font-weight: 800;
 }
 
@@ -254,7 +255,7 @@ section.deploy li:hover{
   font-size: 1em;
 }
 
-section.designed-for .circle{
+section.carousel .circle{
   height: 11px;
   width: 11px;
   border: 1px solid #0169FB;
@@ -262,18 +263,29 @@ section.designed-for .circle{
   display: inline-block;
 }
 
-section.designed-for .circles{
+section.carousel .circles{
   margin-top: 70px;
 }
 
-section.designed-for .circle.full{
+section.carousel .circle.full{
   background-color: #0169FB;
 }
 
 /* QUARTA SECTION */
-section.service-your-customers{
-  background-color: #0048c6;
-  background-image: linear-gradient(#0048c6, #001e99);
+
+
+/* QUINTA SEZIONE */
+section.development-teams .img-wrapper{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+section.development-teams blockquote{
+  margin-top: 14px;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .row.test-speed{
@@ -297,28 +309,48 @@ section.service-your-customers{
   color: #00c7cf;
 }
 
+/* SESTA SEZIONE */
+section.c-t-a .row-btn{
+  margin-top: 25px;
+}
+
 /* BUTTON */
-.button{
-  background-color: blue;
+
+.btn-light-blue{
   padding: 7px 0;
   text-decoration: none;
   font-weight: 600;
   border-radius: 3px;
-}
-
-.btn-light-blue{
   color: #fff;
   background-color: #579aff;
 }
 
 .btn-white{
+  background-color: blue;
+  padding: 7px 0;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 3px;
   color: #626262;
   background-color: #fff;
+}
+
+.btn-white-cta{
+  background-color: #fff;
+  color: #0169FB;
+  padding: 12px 14px;
+  font-size: 1.3em;
+  font-weight: 700;
+  border-radius: 6px;
 }
 
 /* UTILITIES */
 .text-blue{
   color: #0169FB;
+}
+
+.text-dark-blue{
+  color: #031c4e;
 }
 
 .text-white{
@@ -329,10 +361,22 @@ section.service-your-customers{
   color: rgba(255, 255, 255, 0.7);
 }
 
+.text-grey{
+  color: #5c6a88;
+}
+
 .bg-grey{
   background-color: #eee;
 }
 
+.bg-blue-gradient{
+  background-color: #0048c6;
+  background-image: linear-gradient(#0048c6, #001e99);
+}
+
+.b-800{
+  font-weight: 800;
+}
 /* UTILITIES PER MARGIN E PADDING */
 
 .mt-20{
@@ -394,7 +438,7 @@ section.service-your-customers{
   }
 
   /* SECONDA SECTION */
-  section.designed-for .caret-left, .caret-right{
+  section.carousel .caret-left, .caret-right{
     display: inline-block;
   }
 }
