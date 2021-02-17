@@ -52,9 +52,6 @@ body, html{
   margin-bottom: 0;
 }
 
-.text-white{
-  color: #fff;
-}
 
 .jumbotron .introduction h1{
   font-weight: 800;
@@ -207,11 +204,17 @@ section.deploy li:hover{
 
 .bg-page{
   margin: 0 auto;
-  height: 196px;
-  width: 300px;
-  background: url("../img/page.jpg");
-  background-size: cover;
+  margin-top: 80px;
   position: relative;
+}
+
+.img-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-wrapper img{
+  max-width: 100%;
 }
 
 .caret-left, .caret-right{
@@ -219,16 +222,28 @@ section.deploy li:hover{
   position: absolute;
 }
 
+[class*="caret"] i{
+  font-size: 5em;
+}
+
 .caret-left{
   top: 50%;
   transform: translateY(-50%);
-  left: -15px;
+  left: 5%;
+}
+
+.caret-left i{
+  color: #6f7b97;
 }
 
 .caret-right{
   top: 50%;
   transform: translateY(-50%);
-  right: -15px;
+  right: 5%;
+}
+
+.caret-right i{
+  color: #031c4e;
 }
 
 .slogan{
@@ -255,6 +270,33 @@ section.designed-for .circle.full{
   background-color: #0169FB;
 }
 
+/* QUARTA SECTION */
+section.service-your-customers{
+  background-color: #0048c6;
+  background-image: linear-gradient(#0048c6, #001e99);
+}
+
+.row.test-speed{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.row.test-speed [class*="col-"] .row{
+  padding: 6px 0;
+}
+
+.row.test-speed>[class*="col-"]:nth-child(2){
+  margin-top: 30px;
+}
+
+.row.bordered{
+  border-bottom: 1px solid #fff;
+}
+
+.row.test-speed a.link-caret{
+  color: #00c7cf;
+}
+
 /* BUTTON */
 .button{
   background-color: blue;
@@ -279,9 +321,18 @@ section.designed-for .circle.full{
   color: #0169FB;
 }
 
+.text-white{
+  color: #fff;
+}
+
+.text-white-t{
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .bg-grey{
   background-color: #eee;
 }
+
 /* UTILITIES PER MARGIN E PADDING */
 
 .mt-20{
@@ -345,11 +396,8 @@ section.designed-for .circle.full{
   /* SECONDA SECTION */
   section.designed-for .caret-left, .caret-right{
     display: inline-block;
-}
-  section.designed-for .bg-page{
-    height: 287px;
-    width: 440px;
   }
+}
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
 @media all and (min-width: 1200px) {
@@ -422,9 +470,14 @@ section.designed-for .circle.full{
     font-weight: 600;
   }
 
- /* SECONDA SECTION */
- section.designed-for .bg-page{
-   height: 359px;
-   width: 551px;
+ /* QUARTA SECTION */
+ .row.test-speed>[class*="col-"]:nth-child(2){
+   margin-top: 0;
+   padding-left: 25px;
  }
+
+ .row.test-speed>[class*="col-"]:nth-child(1){
+   padding-right: 25px;
+ }
+
 }
