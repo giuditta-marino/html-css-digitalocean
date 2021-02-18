@@ -373,10 +373,6 @@ footer ul.social li{
   font-size: 1.4em;
 }
 
-#text-help{
-  color: #000;
-}
-
 .help-box{
   position: fixed;
   bottom: 0;
@@ -392,7 +388,6 @@ footer ul.social li{
 .help-box .shark-wrapper img{
   max-width: 100%;
   border-radius: 5px;
-
 }
 
 .help-box .shark-wrapper .red-circle{
@@ -417,7 +412,7 @@ footer ul.social li{
   font-size: 0.9em;
   font-weight: 500;
   padding: 10px;
-
+  filter: drop-shadow(2px 2px 7px grey);
 }
 
 .help-box .chat .rectangle{
@@ -434,7 +429,9 @@ footer ul.social li{
   transform: rotate(45deg);
 }
 
-
+.help-box .chat #text-help{
+  color: #000;
+}
 
 /* UTILITIES */
 .text-blue{
@@ -541,6 +538,19 @@ footer ul.social li{
   section.carousel .caret-left, .caret-right{
     display: inline-block;
   }
+
+  /* FOOTER */
+  .help-box .shark-wrapper{
+    width: 7%;
+  }
+
+  .help-box .chat{
+  width: 50%;
+  }
+
+  .help-box .chat .rectangle{
+    width: 90%;
+  }
 }
 
 /* MEDIA QUERY DIMENSIONI DESKTOP */
@@ -624,4 +634,29 @@ footer ul.social li{
    padding-right: 25px;
  }
 
+ /* FOOTER */
+ /* FOOTER */
+ /* .help-box .shark-wrapper{
+   width: 7%;
+ } */
+
+ /* .help-box .chat{
+   width: 30%;
+ } */
+
+ .help-box .shark-wrapper, .help-box .chat{
+   display: inline-block;
+ }
+
+ .help-box .chat .rectangle{
+   width: 90%;
+ }
+
+ .help-box{
+   width: 900px;
+   position: fixed;
+   bottom: 0;
+   right: 10%;
+   z-index: 1;
+ }
 }
