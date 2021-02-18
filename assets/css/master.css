@@ -373,6 +373,10 @@ footer ul.social li{
   font-size: 1.4em;
 }
 
+#logo-footer{
+  margin-bottom: 5px;
+}
+
 .help-box{
   position: fixed;
   bottom: 0;
