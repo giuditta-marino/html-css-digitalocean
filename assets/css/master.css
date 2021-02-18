@@ -383,6 +383,7 @@ footer ul.social li{
 .help-box .shark-wrapper{
   position: relative;
   width: 10%;
+  filter: drop-shadow(2px 2px 7px grey);
 }
 
 .help-box .shark-wrapper img{
