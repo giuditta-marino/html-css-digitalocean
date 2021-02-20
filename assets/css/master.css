@@ -191,13 +191,14 @@ section.deploy li{
 section.deploy li a{
   text-decoration: none;
   color: #6f7b97;
+
 }
 
-section.deploy a:hover{
+section.deploy a:focus{
   color: #000;
 }
 
-section.deploy li:hover{
+section.deploy li:focus{
   border-color: #0169FB;
 }
 
@@ -378,15 +379,16 @@ footer ul.social li{
 }
 
 .help-box{
+  width: 80%;
   position: fixed;
-  bottom: 0;
+  bottom: 5%;
   left: 6%;
   z-index: 1;
 }
 
 .help-box .shark-wrapper{
   position: relative;
-  width: 10%;
+  width: 12%;
   filter: drop-shadow(2px 2px 7px grey);
 }
 
@@ -409,7 +411,6 @@ footer ul.social li{
 
 .help-box .chat{
   margin-top: 20px;
-  width: 80%;
   height: 50%;
   background-color: #fff;
   border-radius: 6px;
@@ -492,9 +493,9 @@ footer ul.social li{
 /* MEDIA QUERY DIMENSIONI TABLET */
 @media all and (min-width: 768px) {
 /* PER COLLASSARE LE NAV E MOSTRARE HAMBURGER MENU */
-    .navbar-toggle{
+  .navbar-toggle{
       display: block;
-    }
+  }
 
   .navbar-header{
       float: none;
@@ -545,16 +546,9 @@ footer ul.social li{
   }
 
   /* FOOTER */
-  .help-box .shark-wrapper{
-    width: 7%;
-  }
 
-  .help-box .chat{
-  width: 50%;
-  }
-
-  .help-box .chat .rectangle{
-    width: 90%;
+  .help-box{
+    width: 45%;
   }
 }
 
@@ -641,27 +635,26 @@ footer ul.social li{
 
  /* FOOTER */
  /* FOOTER */
- /* .help-box .shark-wrapper{
-   width: 7%;
- } */
-
- /* .help-box .chat{
+  .help-box{
    width: 30%;
- } */
+   font-size: 0.8em;
+   position: fixed;
+   bottom: 5%;
+   left: 65%;
+   z-index: 1;
+ }
+  .help-box .chat{
+    width: 82%;
+  }
 
  .help-box .shark-wrapper, .help-box .chat{
    display: inline-block;
  }
 
- .help-box .chat .rectangle{
-   width: 90%;
- }
-
- .help-box{
-   width: 900px;
-   position: fixed;
-   bottom: 0;
-   right: 10%;
-   z-index: 1;
+ .help-box .shark-wrapper{
+   width: 15%;
+   position: absolute;
+   right: 0;
+   top: 33%;
  }
 }
